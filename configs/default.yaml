@@ -1,0 +1,32 @@
+# SARGCL Default Hyperparameters
+# ================================
+
+# Training
+seed: 42
+epochs: 50
+batch_size: 8
+learning_rate: 2.0e-5
+grad_clip: 1.0
+num_workers: 4
+
+# Loss weights
+lambda_hc_cl: 0.1    # Hierarchical contrastive loss weight
+lambda_ot: 0.1       # Optimal Transport alignment loss weight
+
+# Model architecture
+clip_model: "ViT-B/32"
+blip_model: "Salesforce/blip-image-captioning-base"
+max_visual_nodes: 12
+visual_conf: 0.5     # Faster R-CNN detection confidence threshold
+top_k_visual_edges: 8
+hgat_layers: 2
+
+# Contrastive temperature
+tau_min: 0.05
+tau_max: 0.1
+tau_base: 0.07
+
+# Label mapping
+label_map:
+  not_informative: 0
+  informative: 1
