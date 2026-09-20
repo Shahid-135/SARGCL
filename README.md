@@ -49,21 +49,6 @@ SARGCL/
 │   └── default.yaml                   # Default training hyperparameters
 ├── data/
 │   └── README.md                      # Dataset acquisition and preparation guide
-├── figures/                           # Paper diagrams and analysis plots
-│   ├── arch.png                       # Full framework architecture
-│   ├── state.png                      # State-aware entity grounding
-│   ├── hps.png                        # Hyperparameter sensitivity
-│   ├── hyperparameter.png
-│   ├── bubble_chart.png
-│   └── hypergraph_nodes1.png
-├── qualitative/                       # Qualitative case studies and visualizations
-│   ├── comparison_analysis/
-│   └── sample_32_disagree/
-├── results/                           # Pre-computed evaluation logs and reports
-│   ├── test_classification_report.csv
-│   ├── test_classification_report.txt
-│   ├── test_confusion_matrix.csv
-│   └── training_history.csv
 ├── sargcl/                            # Core modular Python package
 │   ├── __init__.py
 │   ├── dataset.py                     # DisasterDataset, CachedSARGCLDataset, collate_fns
@@ -79,9 +64,8 @@ SARGCL/
 │   ├── train.py                       # End-to-end training script
 │   ├── train_cached.py                # Accelerated two-stage feature cached training
 │   └── evaluate.py                    # Standalone checkpoint evaluation
-├── .gitignore
-├── LICENSE                            # MIT License
-├── requirements.txt                   # Python dependencies
+├── .gitignore                          
+├── requirements.txt                 
 └── README.md
 ```
 
