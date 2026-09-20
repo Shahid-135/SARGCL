@@ -2,14 +2,6 @@
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Paper](https://img.shields.io/badge/IEEE-TMM--2026-blue)](https://github.com/Shahid-135/SARGCL)
-
-Official PyTorch implementation of **SARGCL** (*State-Aware Relational Graph Contrastive Learning*).
-
-> **Authors:** [Shahid Shafi Dar](mailto:phd2201201004@iiti.ac.in), [Arnav Jain](mailto:ee220002018@iiti.ac.in), [Nagendra Kumar](mailto:nagendra@iiti.ac.in)  
-> **Affiliation:** Department of Computer Science and Engineering, Indian Institute of Technology Indore, India  
-> **Repository:** [https://github.com/Shahid-135/SARGCL](https://github.com/Shahid-135/SARGCL)
 
 ---
 
@@ -46,40 +38,6 @@ Standard contrastive learning applies uniform attraction across all pairs, leadi
 $$\tau(C) = \tau_{\min} + (\tau_{\max} - \tau_{\min}) \cdot \text{MLP}(C)$$
 
 This formally guarantees softer gradient updates for ambiguous samples and sharper gradients for well-aligned pairs.
-
----
-
-## 📊 Benchmark Results
-
-Evaluated on the **CrisisMMD** multimodal disaster understanding benchmark:
-
-| Metric | Score |
-| :--- | :---: |
-| **Accuracy** | **87.22%** |
-| **Informative F1** | **90.85%** |
-| **Not-Informative F1** | **78.83%** |
-| **Macro F1** | **84.84%** |
-| **Weighted F1** | **86.90%** |
-
-### Detailed Classification Report
-```text
-                 precision    recall  f1-score   support
-
-not_informative       0.86      0.72      0.79       504
-    informative       0.88      0.94      0.91      1030
-
-       accuracy                           0.87      1534
-      macro avg       0.87      0.83      0.85      1534
-   weighted avg       0.87      0.87      0.87      1534
-```
-
-### Hyperparameter Sensitivity & Scalability
-SARGCL demonstrates robust stability across varying hypergraph depths, threshold selections, and batch sizes:
-
-<p align="center">
-  <img src="figures/hps.png" width="48%" />
-  <img src="figures/bubble_chart.png" width="48%" />
-</p>
 
 ---
 
@@ -224,22 +182,6 @@ python scripts/evaluate.py \
     --batch_size 8 \
     --run_uncertainty_analysis \
     --measure_inference_time
-```
-
----
-
-## 📝 Citation
-
-If you find this repository or work helpful in your research, please cite:
-
-```bibtex
-@article{dar2026state,
-  title={State-Aware Hypergraph Representation Learning with Difficulty-Regulated Contrastive Alignment for Multimodal Understanding},
-  author={Dar, Shahid Shafi and Jain, Arnav and Kumar, Nagendra},
-  journal={IEEE Transactions on Multimedia},
-  year={2026},
-  publisher={IEEE}
-}
 ```
 
 ---
