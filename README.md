@@ -17,7 +17,7 @@ We propose **SARGCL** (**S**tate-**A**ware **H**yper**G**raph **C**ontrastive **
 5. **Difficulty-Regulated Contrastive Alignment:** Entropy-regularized Optimal Transport (Sinkhorn–Knopp) measures instance-level cross-modal alignment difficulty, dynamically modulating the temperature schedule $\tau(C)$ in hierarchical contrastive learning (LHC-CL).
 6. **Dirichlet Uncertainty Fusion:** Multimodal representations are adaptively aggregated using evidential deep learning to estimate epistemic uncertainty.
 
-![SARGCL Framework Architecture](arch.png)
+![SARGCL Framework Architecture](arch_final.png)
 
 ---
 
