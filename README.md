@@ -17,7 +17,7 @@ We propose **SARGCL** (**S**tate-**A**ware **H**yper**G**raph **C**ontrastive **
 5. **Difficulty-Regulated Contrastive Alignment:** Entropy-regularized Optimal Transport (Sinkhorn–Knopp) measures instance-level cross-modal alignment difficulty, dynamically modulating the temperature schedule $\tau(C)$ in hierarchical contrastive learning (LHC-CL).
 6. **Dirichlet Uncertainty Fusion:** Multimodal representations are adaptively aggregated using evidential deep learning to estimate epistemic uncertainty.
 
-![SARGCL Framework Architecture](figures/arch.png)
+![SARGCL Framework Architecture](arch.png)
 
 ---
 
@@ -26,7 +26,7 @@ We propose **SARGCL** (**S**tate-**A**ware **H**yper**G**raph **C**ontrastive **
 ### 1. State-Aware Entity Grounding
 Rather than compressing images into global vectors or detecting ungrounded bounding boxes, SARGCL detects key entities and generates state descriptions via BLIP captioning. This projects visual entities directly into the semantic language space of CLIP:
 
-![State-Aware Entity Illustration](figures/state.png)
+![State-Aware Entity Illustration](state.png)
 
 ### 2. Syntactic & Cross-Modal Hypergraphs
 - **Text:** Dependency trees from spaCy are decomposed into hyperedges grouping head tokens with their syntactic dependents.
