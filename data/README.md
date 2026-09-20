@@ -2,7 +2,7 @@
 
 ## CrisisMMD Dataset
 
-This project uses the **CrisisMMD** multimodal crisis-informatics dataset. The dataset contains tweets with images and text from real-world disaster events, labeled as **informative** or **not_informative**.
+This project uses the **CrisisMMD** multimodal crisis-informatics dataset. The dataset contains tweets with images and text from real-world disaster events, labeled as **informative** or **not_informative**. The TSEqD dataset has similar structure.
 
 ### Download
 
@@ -62,3 +62,7 @@ python scripts/train.py \
     --test_csv  data/task_informative_text_img_agreed_lab_test.tsv \
     --image_dir data/data_image
 ```
+## TSEqD Dataset
+
+This project also uses the **TSEqD (Turkey-Syria Earthquake Dataset)** multimodal crisis-informatics dataset. The dataset contains tweets with images and text from the **2023 Turkey-Syria earthquake**, labeled for two tasks: **informative** or **not_informative** for the Informative Task, and multiple humanitarian categories for the Humanitarian Task.
+
