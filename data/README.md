@@ -66,3 +66,28 @@ python scripts/train.py \
 
 This project also uses the **TSEqD (Turkey-Syria Earthquake Dataset)** multimodal crisis-informatics dataset. The dataset contains tweets with images and text from the **2023 Turkey-Syria earthquake**, labeled for two tasks: **informative** or **not_informative** for the Informative Task, and multiple humanitarian categories for the Humanitarian Task.
 
+### Download
+
+1. Download the TSEqD dataset from the official source/repository.
+
+2. Extract the dataset and note the paths to:
+   - The **image directory** (e.g., `data_image/`)
+   - The **TSV annotation files**:
+     - `train.tsv`
+     - `dev.tsv`
+     - `test.tsv`
+
+### Expected Directory Structure
+
+```text
+data/
+├── README.md
+├── train.tsv                                           (training split)
+├── dev.tsv                                             (validation split)
+├── test.tsv                                            (test split)
+└── data_image/                                         (tweet images)
+    ├── image_00001.jpg
+    ├── image_00002.jpg
+    ├── image_00003.jpg
+    ├── ...
+
