@@ -63,8 +63,7 @@ SARGCL/
 ├── scripts/
 │   ├── train.py                       # End-to-end training script
 │   ├── train_cached.py                # Accelerated two-stage feature cached training
-│   └── evaluate.py                    # Standalone checkpoint evaluation
-├── .gitignore                          
+│   └── evaluate.py                    # Standalone checkpoint evaluation                        
 ├── requirements.txt                 
 └── README.md
 ```
