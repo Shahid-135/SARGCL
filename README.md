@@ -99,6 +99,7 @@ Format your data as tab-separated (`.tsv`) files with the following columns:
 - `image`: Relative path to image file
 - `tweet_text`: Raw tweet text
 - `label`: Binary classification target (`0` or `1`)
+- Same structure for humanitarian task also.
 
 Organize the directory as follows:
 ```text
