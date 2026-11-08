@@ -1,0 +1,13 @@
+torch>=2.1
+torchvision>=0.16
+transformers>=4.40
+git+https://github.com/openai/CLIP.git
+spacy>=3.7
+numpy
+pandas
+scikit-learn
+scipy
+tqdm
+matplotlib
+Pillow
+thop
