@@ -35,10 +35,6 @@ Rather than compressing images into global vectors or detecting ungrounded bound
 ### 3. Difficulty-Regulated Optimal Transport Alignment
 Standard contrastive learning applies uniform attraction across all pairs, leading to gradient explosion on noisy or partially paired samples. SARGCL computes the Optimal Transport cost $\mathcal{W}(z^V, z^T)$ as a **detached difficulty signal**, modulating temperature $\tau$:
 
-$$\tau(C) = \tau_{\min} + (\tau_{\max} - \tau_{\min}) \cdot \text{MLP}(C)$$
-
-This formally guarantees softer gradient updates for ambiguous samples and sharper gradients for well-aligned pairs.
-
 ---
 
 ## 📁 Repository Structure
